@@ -9,15 +9,13 @@
 
 #### 安装教程
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1.  `npm install`
+
 
 #### 使用说明
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1.  `npm run build`
+2.  `npm run dev`
 
 #### 参与贡献
 

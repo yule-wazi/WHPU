@@ -1,0 +1,6 @@
+:root {
+  --primary-color: #7CECFC;
+  --van-primary-color:var(--primary-color);
+  --theme-gradient: linear-gradient(90deg,#fa8c1d,#fcaf3f);
+  --animation-time: .3s;
+}

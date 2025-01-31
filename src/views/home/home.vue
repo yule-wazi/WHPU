@@ -24,11 +24,16 @@ import { ref } from 'vue';
   .home {
     position: relative; 
     height: 100vh;
-    width: 100vh;
+    width: 100vw;
+
     .bg {
       position: absolute;
       left: 0;
       top: 0;
+      width: 100vw;
+      video {
+        width: 100vw;
+      }
     }
     .mute {
       position: fixed;

@@ -1,11 +1,11 @@
 <template>
-  <div ref="bgElement" class="culture">
+  <div class="culture">
     <div class="content" @mousemove="mouseArea"> 
-      <div class="banner" :style="styleObject">
-        <div class="bg" >
+      <div ref="bgElement" class="banner" :style="styleObject">
+        <div class="bg">
         <img src="@/assets/img/culture02.png" alt="">
         </div>
-        <div class="title">
+        <div class="title" >
           <div class="up">WELCOME TO</div>
           <div class="down"> WHPU</div>
         </div>
@@ -220,7 +220,7 @@ const styleObject = computed(() => ({
         .control {
           .last {
             position: absolute;
-            height: 25vh;
+            height: 26vh;
             width: 4vw;
             background-color: #11ae7c;
             top: 45vh;
@@ -234,7 +234,7 @@ const styleObject = computed(() => ({
           }
           .next {
             position: absolute;
-            height: 25vh;
+            height: 26vh;
             width: 4vw;
             top: 45vh;
             right: 8vw;

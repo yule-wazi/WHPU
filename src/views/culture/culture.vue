@@ -115,34 +115,7 @@ const styleObject = computed(() => ({
       background-repeat: no-repeat;
       background-size: 140% 70%;
       background-position: 0 180px;
-
-      .banner {
-        position: relative;
-        transform-style:preserve-3d;
-        transform: translateZ(200px);
-        @keyframes allBannerMove {
-          0% {transform: translateX(1500px);}
-          100% {transform: translateX(0);}
-        }
-
-        :deep( .my-swipe) {
-          position: absolute;
-          top: 32vh;
-          right: 13.5vw;
-          width: 50vw;
-          height: 55vh;
-          background-color: #11ae7c;
-          border: 10px #585858 solid;
-          cursor:auto;
-          animation: allBannerMove var(--animation-time) .7s ease-in backwards;
-        }
-        :deep(.van-swipe-item) {
-          img {
-            height: 100%;
-            width: 100%;
-          }
-        }
-        .bg {
+      .bg {
           position: fixed;
           transform: translateZ(-200px);
           top: -50px;
@@ -196,7 +169,35 @@ const styleObject = computed(() => ({
             animation: tapeRotate 6s linear infinite;
             filter: blur(1px);
           }
-        }  
+        } 
+      .banner {
+        position: relative;
+        transform-style:preserve-3d;
+        transform: translateZ(200px);
+        @keyframes allBannerMove {
+          0% {transform: translateX(1500px);}
+          100% {transform: translateX(0);}
+        }
+
+        :deep( .my-swipe) {
+          position: absolute;
+          top: 32vh;
+          right: 13.5vw;
+          width: 900px;
+          height: 550px;
+          background-color: #11ae7c;
+          border: 10px #585858 solid;
+          cursor:auto;
+          animation: allBannerMove var(--animation-time) .7s ease-in backwards;
+        }
+        :deep(.van-swipe-item) {
+          img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+         
         .title {
             position: absolute;
             transform: translateZ(-80px);
@@ -220,11 +221,11 @@ const styleObject = computed(() => ({
         .control {
           .last {
             position: absolute;
-            height: 26vh;
-            width: 4vw;
+            height:245px;
+            width: 68px;
             background-color: #11ae7c;
             top: 45vh;
-            left: 30vw;
+            left: 27vw;
             background-image: url('@/assets/img/culture_left.png');
             background-size: 200% auto;
             background-position: 0 100%;
@@ -234,8 +235,8 @@ const styleObject = computed(() => ({
           }
           .next {
             position: absolute;
-            height: 26vh;
-            width: 4vw;
+            height: 245px;
+            width: 68px;
             top: 45vh;
             right: 8vw;
             background-color: #11ae7c;
@@ -253,7 +254,7 @@ const styleObject = computed(() => ({
           transform: translateZ(50px);
           display: flex;
           top: 700px;
-          left: 380px;
+          left: 310px;
           font-size: 80px;
           font-weight: 1000;
           font-family:'Courier New', Courier, monospace;
@@ -269,7 +270,7 @@ const styleObject = computed(() => ({
           font-size: 40px;
           font-weight: 1000;
           color: #AEAEAE;
-          top: 82vh;
+          top: 84vh;
           left: 600px;
           animation: allBannerMove var(--animation-time) .7s ease-in backwards;
         }

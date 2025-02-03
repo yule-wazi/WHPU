@@ -49,7 +49,7 @@ import { ref } from 'vue';
     background-image: url('@/assets/img/intro_bg.png');
     .content {
       display: flex;
-      padding: 110px 120px;
+      padding: 140px 150px;
       background-color: #43599b5d;
       font-size: 25px;
       font-weight: 700;

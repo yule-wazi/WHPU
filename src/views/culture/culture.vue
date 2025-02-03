@@ -221,8 +221,8 @@ const styleObject = computed(() => ({
         .control {
           .last {
             position: absolute;
-            height:245px;
-            width: 68px;
+            height: 26vh;
+            width: 4vw;
             background-color: #11ae7c;
             top: 45vh;
             left: 27vw;
@@ -235,8 +235,8 @@ const styleObject = computed(() => ({
           }
           .next {
             position: absolute;
-            height: 245px;
-            width: 68px;
+            height: 26vh;
+            width: 4vw;
             top: 45vh;
             right: 8vw;
             background-color: #11ae7c;
